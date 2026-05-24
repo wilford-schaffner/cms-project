@@ -1,0 +1,11 @@
+.detail-header {
+  min-height: 78px;
+}
+
+.detail-name {
+  margin: 0 0 10px;
+}
+
+.detail-image {
+  max-height: 200px;
+}
