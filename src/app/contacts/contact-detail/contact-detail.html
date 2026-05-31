@@ -5,8 +5,8 @@
       <img class="img-responsive detail-image" [src]="contact.imageUrl" [alt]="contact.name" />
     </div>
     <div class="pull-right btn-group">
-      <a class="btn btn-primary" href="#">Edit</a>
-      <a class="btn btn-danger" href="#">Delete</a>
+      <a class="btn btn-primary" [routerLink]="['/contacts', contact?.id, 'edit']">Edit</a>
+      <a class="btn btn-danger" (click)="onDelete()">Delete</a>
     </div>
     <div class="clearfix"></div>
   </div>
