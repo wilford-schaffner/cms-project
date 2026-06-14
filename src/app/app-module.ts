@@ -1,5 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { App } from './app';
 import { Header } from './header';
@@ -38,7 +39,7 @@ import { AppRoutingModule } from './app-routing-module';
     DocumentEdit,
     ContactEdit,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
