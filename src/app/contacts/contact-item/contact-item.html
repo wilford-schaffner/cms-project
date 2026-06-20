@@ -6,7 +6,7 @@
   <div class="pull-left">
     <h4 class="list-group-item-heading">{{ contact.name }}</h4>
   </div>
-  <span class="pull-right">
+  <span class="pull-right" *ngIf="contact.imageUrl?.trim()">
     <img
       class="img-responsive"
       [src]="contact.imageUrl"

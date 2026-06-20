@@ -19,7 +19,7 @@ export class MessageEdit {
   onSendMessage(): void {
     const subject = this.subjectRef.nativeElement.value;
     const msgText = this.msgTextRef.nativeElement.value;
-    const newMessage = new Message('99', subject, msgText, this.currentSender);
+    const newMessage = new Message('', subject, msgText, this.currentSender);
     this.messageService.addMessage(newMessage);
   }
 
